@@ -6,22 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Pelatihan Pegawai PUSDAYA</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body, html {
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-    iframe {
-      width: 100%;
-      height: 100vh;
-      border: none;
-    }
-  </style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html, body {
+        width: 100%;
+        height: 100%;
+        /* Biarkan halaman utama bisa di-scroll di HP */
+        overflow-y: auto; 
+        -webkit-overflow-scrolling: touch;
+      }
+      iframe {
+        width: 100%;
+        /* Menggunakan min-height agar iframe menyesuaikan konten jika memanjang */
+        min-height: 100vh;
+        border: none;
+        display: block;
+      }
+    </style>
 </head>
 <body>
   <iframe src="https://script.google.com/macros/s/AKfycbzaMZwmF6EDjX2Gfg0F0EoMU7r6D9wqg9QPdQ8kPEtUD4jp9nynQHFJw9yE1l11LlA2/exec"></iframe>
